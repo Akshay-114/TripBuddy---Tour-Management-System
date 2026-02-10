@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Packages";
+}
+
+<div class="tourlist-wrapper">
+
+    <div class="tourlist-actions">
+        <a href="@Url.Action("AddPackage", "Home")" class="tourlist-add-btn">
+            ➕ Add Package
+        </a>
+
+        <a href="@Url.Action("Index", "Home")" class="tourlist-add-btn">
+            ⬅ Back
+        </a>
+    </div>
+
+    <!--  IMPORTANT: Dynamic content container -->
+    <div id="divTarget"></div>
+
+</div>
+
+@section Scripts {
+    <script src="/Modules/Package/Details/PackageDetails.js"></script>
+}

@@ -1,0 +1,51 @@
+﻿<!-- Admin Form -->
+<div class="tourform-wrapper">
+
+    <h2 class="tourform-title">Add Tour Package</h2>
+
+    <form class="tourform-form" id="tourForm" enctype="multipart/form-data">
+
+        <input type="hidden" id="packageId" name="PackageId" value="0" />
+
+
+        <div class="tourform-group">
+            <label>Package Name</label>
+            <input type="text" id="title" name="PackageName" required>
+        </div>
+
+        <div class="tourform-group">
+            <label>Location</label>
+            <input type="text" id="location" name="Location" required>
+        </div>
+
+        <div class="tourform-group">
+            <label>Description</label>
+            <textarea id="description" rows="3" name="Description" required></textarea>
+        </div>
+
+        <div class="tourform-group">
+            <label>Price (₹)</label>
+            <input type="number" id="price" name="Price" min="0" required>
+        </div>
+
+        <div class="tourform-group">
+            <label>Image</label>
+            <input type="file" id="image" name="ImageFile" placeholder="Choose a file" >
+        </div>
+
+        <div class="tourform-actions">
+            <button class="tourform-save" type="submit">Save</button>
+            <button class="tourform-cancel" id="btnCancel" type="button">Cancel</button>
+        </div>
+
+    </form>
+</div>
+
+<!-- Tour List Output -->
+<div class="tourlist-wrapper" id="tourList"></div>
+
+@section Scripts {
+    <script src="/Modules/Package/Add/AddPackage.js"></script>
+}
+
+

@@ -1,0 +1,46 @@
+﻿<div class="cust-form-wrapper">
+
+    <h2 class="cust-form-title">Customer Booking</h2>
+
+    <form class="cust-form" id="CustForm">
+
+        <input type="hidden" id="customerId" name="CustomerID" value="0" />
+
+        <div class="cust-form-row">
+            <label class="cust-label">Customer Name</label>
+            <input type="text" class="cust-input" id="customerName" name="CustomerName" placeholder="Enter full name" required />
+        </div>
+
+        <div class="cust-form-row">
+            <label class="cust-label">Mobile Number</label>
+            <input type="tel" class="cust-input" id="mobileNo" name="MobileNo" maxlength="10" placeholder="Enter mobile number" required />
+        </div>
+
+        <div class="cust-form-row">
+            <label class="cust-label">Email</label>
+            <input type="email" class="cust-input" id="email" name="Email" placeholder="Enter emaid Id" required />
+        </div>
+
+        <div class="cust-form-row">
+            <label class="cust-label">Choose Package</label>
+            <select class="cust-input" id="packageSelect" name="PackageName">
+                <option value="">-- Select Package --</option>
+            </select>
+        </div>
+
+        <div class="cust-form-row">
+            <label class="cust-label">Package Price (₹)</label>
+            <input type="text" class="cust-input cust-readonly" id="packageCost" name="Price" readonly />
+        </div>
+
+        <div class="cust-form-actions">
+            <button type="submit" class="cust-btn-primary">Book Now</button>
+            <button type="button" class="cust-btn-secondary">Clear</button>
+        </div>
+
+    </form>
+</div>
+
+@section Scripts {
+    <script src="/Modules/UserForm/Add/UserForm.js"></script>
+}

@@ -1,0 +1,29 @@
+﻿<div class="booking-add-wrapper">
+    <div class="booking-add-title">Bookings</div>
+
+    <a href="/Home/UserForm" class="booking-add-btn">
+        ➕ Book a Trip
+    </a>
+</div>
+
+<div class="booking-table-wrapper">
+    <table class="booking-table">
+        <thead>
+            <tr>
+                <th>Booking No.</th>
+                <th>Name</th>
+                <th>Mobile</th>
+                <th>Package</th>
+                <th>Price(₹)</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="bookingTableBody">
+            <!-- data loads here -->
+        </tbody>
+    </table>
+</div>
+
+@section Scripts {
+    <script src="/Modules/UserForm/Details/userformdetails.js"></script>
+}

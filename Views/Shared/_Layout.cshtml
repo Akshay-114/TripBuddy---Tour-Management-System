@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - TripBuddy</title>
+    <script type="importmap"></script>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/TripBuddy.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/AddPackage.css">
+    <link rel="stylesheet" href="~/css/Booking.css">
+    <link rel="stylesheet" href="~/css/Index.css">
+    <link rel="stylesheet" href="~/css/Login.css">
+    <link rel="stylesheet" href="~/css/Packages.css">
+    <link rel="stylesheet" href="~/css/Register.css">
+    <link rel="stylesheet" href="~/css/UserForm.css">
+    <link rel="stylesheet" href="~/css/Home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-container">
+
+            <!-- Logo & Brand -->
+            <div class="brand-box">
+                <img src="/lib/logo.png" alt="Logo" class="brand-logo">
+                <span class="brand-name">TripBuddy</span>
+            </div>
+
+            <!-- Navigation -->
+            <nav class="main-nav">
+
+                <a href="@Url.Action("Index", "Home")" class="nav-link">
+                    <i class="fa-solid fa-house"></i>
+                    Home
+                </a>
+
+                <a href="@Url.Action("Packages", "Home")" class="nav-link">
+                    <i class="fa-solid fa-suitcase-rolling"></i>
+                    Packages
+                </a>
+
+                 <a href="@Url.Action("Booking", "Home")" class="nav-link">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    Booking
+                </a>
+
+                <a href="@Url.Action("Login", "Home")" class="nav-link">
+                    <i class="fa-solid fa-user-circle"></i>
+                    Logout
+                </a>
+
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Content -->
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p class="footer-text">
+            © 2026 TripBuddy Tours. All rights reserved.
+        </p>
+    </footer>
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
+
+
+

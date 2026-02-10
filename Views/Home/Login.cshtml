@@ -1,0 +1,77 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+
+    <link href="~/css/Login.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div class="login-bg">
+    <div class="login-wrapper">
+        <h2>Login</h2>
+
+        <form id="loginForm">
+            <div class="login-row">
+                <label>Username</label>
+                <input type="text" id="userName" required />
+            </div>
+
+            <div class="login-row">
+                <label>Password</label>
+                <input type="password" id="password" required />
+            </div>
+
+            <button type="submit">Login</button>
+        </form>
+        </div>
+    </div>
+
+    <script>
+        $("#loginForm").submit(function (e) {
+            e.preventDefault();
+
+            $.ajax({
+                url: "/Login/CheckLogin",
+                type: "POST",
+                data: {
+                    userName: $("#userName").val(),
+                    password: $("#password").val()
+                },
+
+                beforeSend: function () {
+                    Swal.fire({
+                        title: "Checking...",
+                        allowOutsideClick: false,
+                        didOpen: () => Swal.showLoading()
+                    });
+                },
+
+                success: function (res) {
+                    Swal.close();
+
+                    if (res.success) {
+                        Swal.fire("Success", "Login successful", "success")
+                            .then(() => {
+                                window.location.href = "/Home/Index";
+                            });
+                    } else {
+                        Swal.fire("Error", "Invalid username or password", "error");
+                    }
+                },
+
+                error: function () {
+                    Swal.close();
+                    Swal.fire("Error", "Server error", "error");
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

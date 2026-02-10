@@ -1,0 +1,77 @@
+﻿<!-- Hero Section -->
+<section class="home-hero">
+    <div class="home-hero-content">
+        <h1 class="home-hero-title">
+            Explore the World with <span>TripBuddy</span>
+        </h1>
+        <p class="home-hero-text">
+            Discover amazing destinations, book unforgettable journeys, and travel stress-free.
+        </p>
+
+        <div class="home-hero-buttons">
+            <a href="@Url.Action("Packages", "Home")" class="home-btn primary">View Packages</a>
+            <a href="@Url.Action("Booking", "Home")" class="home-btn secondary">View Bookings</a>
+        </div>
+    </div>
+</section>
+
+<!-- Popular Packages -->
+<section class="home-section">
+    <h2 class="home-section-title">Popular Packages</h2>
+
+    <div class="home-packages">
+        <div class="home-package-card">
+            <img src="/lib/beach.jpg" alt="Tour">
+            <h3>Beach Escape</h3>
+            <p>Relax on golden beaches with premium stays.</p>
+            <span>$299</span>
+        </div>
+
+        <div class="home-package-card">
+            <img src="/lib/mountain.jpg" alt="Tour">
+            <h3>Mountain Adventure</h3>
+            <p>Experience thrilling treks and scenic views.</p>
+            <span>$349</span>
+        </div>
+
+        <div class="home-package-card">
+            <img src="/lib/city.jpg" alt="Tour">
+            <h3>City Explorer</h3>
+            <p>Discover culture, food, and nightlife.</p>
+            <span>$199</span>
+        </div>
+    </div>
+</section>
+
+<!-- Why Choose Us -->
+<section class="home-why">
+    <h2 class="home-section-title">Why Choose Us</h2>
+
+    <div class="home-features">
+        <div class="home-feature">
+            <i class="fa-solid fa-globe"></i>
+            <h4>Worldwide Tours</h4>
+            <p>Handpicked destinations across the globe.</p>
+        </div>
+
+        <div class="home-feature">
+            <i class="fa-solid fa-hand-holding-dollar"></i>
+            <h4>Best Prices</h4>
+            <p>No hidden charges. Best value guaranteed.</p>
+        </div>
+
+        <div class="home-feature">
+            <i class="fa-solid fa-headset"></i>
+            <h4>24/7 Support</h4>
+            <p>We’re here whenever you need us.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section class="home-cta">
+    <h2>Ready for your next adventure?</h2>
+    <a href="@Url.Action("UserForm", "Home")" class="home-btn primary">
+        Start Booking
+    </a>
+</section>
