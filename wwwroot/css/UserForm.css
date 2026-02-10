@@ -1,0 +1,117 @@
+﻿/* =========================================================
+   TripBuddy – Customer Form Theme
+   ========================================================= */
+
+.cust-form-wrapper {
+    max-width: 480px;
+    margin: 40px auto;
+    padding: 28px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(18, 183, 176, 0.15);
+    border: 1px solid #e0f4f3;
+}
+
+/* =========================================================
+   Title
+   ========================================================= */
+.cust-form-title {
+    text-align: center;
+    margin-bottom: 26px;
+    color: var(--deep-navy);
+    font-weight: 800;
+}
+
+/* =========================================================
+   Form Rows
+   ========================================================= */
+.cust-form-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+/* =========================================================
+   Labels
+   ========================================================= */
+.cust-label {
+    margin-bottom: 6px;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--deep-navy);
+}
+
+/* =========================================================
+   Inputs
+   ========================================================= */
+.cust-input {
+    padding: 12px 14px;
+    font-size: 14px;
+    border-radius: 10px;
+    border: 1px solid #cfeeee;
+    outline: none;
+    background-color: #ffffff;
+    transition: all 0.25s ease;
+}
+
+    .cust-input:focus {
+        border-color: var(--primary-teal);
+        box-shadow: 0 0 0 3px rgba(18, 183, 176, 0.15);
+    }
+
+/* =========================================================
+   Readonly Inputs
+   ========================================================= */
+.cust-readonly {
+    background-color: #f2fbfb;
+    cursor: not-allowed;
+    color: #6b7280;
+}
+
+/* =========================================================
+   Form Actions
+   ========================================================= */
+.cust-form-actions {
+    display: flex;
+    gap: 16px;
+    margin-top: 28px;
+}
+
+/* =========================================================
+   Primary Button (Save / Submit)
+   ========================================================= */
+.cust-btn-primary {
+    flex: 1;
+    padding: 13px;
+    background: linear-gradient(135deg, var(--primary-teal), var(--secondary-teal));
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+    .cust-btn-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 18px rgba(18, 183, 176, 0.4);
+    }
+
+/* =========================================================
+   Secondary Button (Cancel / Back)
+   ========================================================= */
+.cust-btn-secondary {
+    flex: 1;
+    padding: 13px;
+    background-color: #eef6f6;
+    color: var(--deep-navy);
+    border: 1px solid #d6eeee;
+    border-radius: 30px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+    .cust-btn-secondary:hover {
+        background-color: #e3f2f2;
+    }

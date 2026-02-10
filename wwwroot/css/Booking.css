@@ -1,0 +1,155 @@
+﻿/* =========================================================
+   TripBuddy Theme – Single CSS File
+   Brand-based colors (Logo Teal)
+   ========================================================= */
+
+/* Color Palette (Logo Aligned) */
+:root {
+    --primary-teal: #12B7B0; /* Logo color */
+    --secondary-teal: #0fa19b;
+    --teal-light: #e9fafa;
+    --sun-yellow: #ffb703;
+    --sun-orange: #f4a261;
+    --deep-navy: #0b2545;
+    --soft-bg: #f6fefe;
+    --danger-red: #e63946;
+}
+
+/* =========================================================
+   Page Light Background
+   ========================================================= */
+body {
+    background: linear-gradient(180deg, #f3fbfb, #ffffff);
+}
+
+/* =========================================================
+   Wrapper
+   ========================================================= */
+.booking-table-wrapper {
+    background: #ffffff;
+    padding: 26px;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(18, 183, 176, 0.15);
+    border: 1px solid #e0f4f3;
+}
+
+/* =========================================================
+   Table
+   ========================================================= */
+.booking-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+    /* =========================================================
+   Table Header
+   ========================================================= */
+    .booking-table thead tr {
+        background: linear-gradient(135deg, var(--primary-teal), var(--secondary-teal));
+    }
+
+    .booking-table thead th {
+        color: #ffffff;
+        padding: 16px 12px;
+        text-align: center;
+        font-weight: 700;
+        letter-spacing: 0.4px;
+    }
+
+    /* =========================================================
+   Table Body
+   ========================================================= */
+    .booking-table tbody td {
+        padding: 15px 12px;
+        text-align: center;
+        border-bottom: 1px solid #e6f6f6;
+        color: var(--deep-navy);
+        font-weight: 500;
+    }
+
+    .booking-table tbody tr {
+        background-color: #ffffff;
+    }
+
+        .booking-table tbody tr:hover {
+            background-color: var(--teal-light);
+        }
+
+/* =========================================================
+   Action Buttons – Common
+   ========================================================= */
+.booking-btn {
+    padding: 7px 18px;
+    font-size: 14px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.25s ease;
+}
+
+/* =========================================================
+   Edit Button
+   ========================================================= */
+.booking-btn-edit {
+    background: linear-gradient(135deg, var(--primary-teal), var(--secondary-teal));
+    color: #ffffff;
+}
+
+    .booking-btn-edit:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 14px rgba(18, 183, 176, 0.45);
+    }
+
+/* =========================================================
+   Delete Button
+   ========================================================= */
+.booking-btn-delete {
+    background: linear-gradient(135deg, #ff6b6b, var(--danger-red));
+    color: #ffffff;
+}
+
+    .booking-btn-delete:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 14px rgba(230, 57, 70, 0.45);
+    }
+
+/* =========================================================
+   Top Section (Title + Add Button)
+   ========================================================= */
+.booking-add-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 22px;
+}
+
+.booking-add-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--deep-navy);
+}
+
+/* =========================================================
+   Book a Trip Button
+   ========================================================= */
+.booking-add-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 26px;
+    background: linear-gradient(135deg, var(--sun-yellow), var(--sun-orange));
+    color: var(--deep-navy);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 32px;
+    transition: all 0.25s ease;
+}
+
+    .booking-add-btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 22px rgba(255, 183, 3, 0.45);
+    }

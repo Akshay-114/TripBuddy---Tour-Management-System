@@ -1,0 +1,115 @@
+﻿/* =========================================================
+   TripBuddy – Tour Package Admin Form
+   ========================================================= */
+
+.tourform-wrapper {
+    max-width: 620px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 14px 32px rgba(18, 183, 176, 0.15);
+    border: 1px solid #e0f4f3;
+}
+
+/* =========================================================
+   Title
+   ========================================================= */
+.tourform-title {
+    margin-bottom: 26px;
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--deep-navy);
+    text-align: center;
+}
+
+/* =========================================================
+   Form Group
+   ========================================================= */
+.tourform-group {
+    margin-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+    .tourform-group label {
+        font-weight: 600;
+        margin-bottom: 6px;
+        color: var(--deep-navy);
+    }
+
+    /* =========================================================
+   Inputs & Textarea
+   ========================================================= */
+    .tourform-group input,
+    .tourform-group textarea {
+        padding: 12px 14px;
+        border-radius: 10px;
+        border: 1px solid #cfeeee;
+        font-size: 14px;
+        outline: none;
+        background-color: #ffffff;
+        transition: all 0.25s ease;
+    }
+
+        .tourform-group input:focus,
+        .tourform-group textarea:focus {
+            border-color: var(--primary-teal);
+            box-shadow: 0 0 0 3px rgba(18, 183, 176, 0.15);
+        }
+
+/* =========================================================
+   Actions
+   ========================================================= */
+.tourform-actions {
+    display: flex;
+    gap: 18px;
+    margin-top: 30px;
+}
+
+/* =========================================================
+   Save Button
+   ========================================================= */
+.tourform-save {
+    flex: 1;
+    padding: 13px;
+    border: none;
+    background: linear-gradient(135deg, var(--primary-teal), var(--secondary-teal));
+    color: #ffffff;
+    font-weight: 700;
+    border-radius: 32px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+    .tourform-save:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 18px rgba(18, 183, 176, 0.45);
+    }
+
+/* =========================================================
+   Cancel Button
+   ========================================================= */
+.tourform-cancel {
+    flex: 1;
+    padding: 13px;
+    border: 1px solid #d6eeee;
+    background: #eef6f6;
+    color: var(--deep-navy);
+    font-weight: 700;
+    border-radius: 32px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+    .tourform-cancel:hover {
+        background: #e3f2f2;
+    }
+
+    /* =========================================================
+   Click Feedback
+   ========================================================= */
+    .tourform-save:active,
+    .tourform-cancel:active {
+        transform: scale(0.97);
+    }
